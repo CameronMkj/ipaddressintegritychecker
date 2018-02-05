@@ -6,7 +6,7 @@ ipAddress = raw_input("What is the requested IP address you want to scan? ")
 privateApiKey = "APIKEY"
 #privateApiKey can be generated on account creation with 'ipqualityscore.com'.
 
-r = requests.get("https://www.ipqualityscore.com/api/json/ip/" + "privateApiKey + "/" + ipAddress)
+r = requests.get("https://www.ipqualityscore.com/api/json/ip/" + privateApiKey + "/" + ipAddress)
 
 os.system('cls' if os.name == 'nt' else 'clear')
 print("-" * 80)
